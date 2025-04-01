@@ -1,0 +1,93 @@
+/* Modern color palette variables */
+:root {
+  --primary: #purple;
+  --primary-dark: #2563EB;
+  --secondary: #10B981;
+  --secondary-dark: #059669;
+  --background: #F8FAFC;
+  --surface: #FFFFFF;
+  --text: #1E293B;
+  --text-light: #64748B;
+}
+
+body {
+    font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.controls button {
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+#toggleMode {
+  grid-column: 1 / -1;
+  background-color: var(--primary);
+  color: white;
+}
+
+#toggleMode:hover {
+  background-color: var(--primary-dark);
+}
+
+#toggleMode.break-mode {
+  background-color: var(--secondary);
+}
+
+#toggleMode.break-mode:hover {
+  background-color: var(--secondary-dark);
+}
+
+#start {
+  background-color: var(--primary);
+  color: white;
+}
+
+#start:hover {
+  background-color: var(--primary-dark);
+}
+
+.work-mode:hover {
+    background-color: #1976D2 !important;
+}
+
+.break-mode {
+    background-color: #FF9800 !important;
+}
+
+.break-mode:hover {
+    background-color: #F57C00 !important;
+} 
